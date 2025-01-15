@@ -1,3 +1,6 @@
 {
-  "wallaby.node": "/usr/local/bin/node"
+  "wallaby.node": "/usr/local/bin/node",
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  }
 }
