@@ -1,17 +1,11 @@
 module.exports = function () {
   return {
-    files: [
-      'src/**/*.js'
-    ],
-
-    tests: [
-      'test/**/*Spec.js'
-    ],
-
     env: {
-      type: 'node',
-      runner: 'node',
-      kind: 'chrome'
-    },
+      kind: 'chrome', // Use Chrome environment
+      runner: '/usr/bin/google-chrome-stable',
+      params: {
+        runner: '--headless'
+      }
+    }
   };
 };
